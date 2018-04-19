@@ -7,12 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
 {
     public static $files = array (
-        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'ddc0a4d7e61c0286f0f8593b1903e894' => __DIR__ . '/..' . '/clue/stream-filter/src/functions.php',
         '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -30,6 +31,7 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Debug\\' => 24,
@@ -40,6 +42,7 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
@@ -49,6 +52,8 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         'I' => 
         array (
             'Interop\\Container\\' => 18,
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
         ),
         'H' => 
         array (
@@ -72,6 +77,7 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Doctrine\\Common\\Inflector\\' => 26,
         ),
         'C' => 
         array (
@@ -108,6 +114,10 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
         'Symfony\\Component\\OptionsResolver\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/options-resolver',
@@ -136,6 +146,10 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
         ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -159,6 +173,14 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         'Interop\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
         'Http\\Promise\\' => 
         array (
@@ -205,6 +227,10 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
         'Clue\\StreamFilter\\' => 
         array (
             0 => __DIR__ . '/..' . '/clue/stream-filter/src',
@@ -213,6 +239,10 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -251,6 +281,7 @@ class ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit47bb41ffd3cbed6b0ddc94de61448a82::$prefixesPsr0;
 
         }, null, ClassLoader::class);

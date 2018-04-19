@@ -32,8 +32,6 @@ class HomeController extends Controller
         $previousJobs = $params['previousJobs'];
         $additionalInfo = $params['additionalInfo'];
 
-        $nameConcat = str_slug($name);
-
         $companies = '';
 
         foreach ($companiesArray as $company) {
