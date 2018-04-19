@@ -63,7 +63,7 @@ class HomeController extends Controller
         if ($resume) {
             $mg->messages()->send('careersatlfx.com', [
               'from'    => $email,
-              'to'      => 'wow@careersatlfx.com',
+              'to'      => 'trevor@darkroast.co',
               'subject' => $name . ' has filled out an application at careersatlfx.com',
               'html'    => $body,
               'attachment' => [
@@ -73,7 +73,7 @@ class HomeController extends Controller
         } else {
             $mg->messages()->send('careersatlfx.com', [
               'from'    => $email,
-              'to'      => 'wow@careersatlfx.com',
+              'to'      => 'trevor@darkroast.co',
               'subject' => $name . ' has filled out an application at careersatlfx.com',
               'html'    => $body
             ]);
