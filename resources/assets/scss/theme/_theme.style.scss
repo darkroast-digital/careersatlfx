@@ -10,11 +10,13 @@ section {
 
     @media screen and (max-width:48em) {
         height:100%;
-    }
-
-    @media screen and (max-width:32em) {
+        max-height:100%;
         min-height:1px;
     }
+
+    // @media screen and (max-width:32em) {
+    //     min-height:1px;
+    // }
     
     p, ul {
         line-height:2;
@@ -443,10 +445,8 @@ section {
     background-position:center;
     background-color:black;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
@@ -577,10 +577,8 @@ section {
     background-position:center;
     background-color:#ececec;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
@@ -703,10 +701,8 @@ section {
     background-position:center;
     background-color:#c09b59;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
@@ -825,10 +821,8 @@ section {
     background-position:center;
     background-color:white;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
@@ -942,10 +936,8 @@ section {
     background-position:center;
     background-color:#546656;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
@@ -1065,10 +1057,8 @@ section {
     background-position:center;
     background-color:black;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
@@ -1187,10 +1177,8 @@ section {
     background-position:center;
     background-color:white;
     position:relative;
-    overflow:hidden;
 
     @media screen and (max-width:48em) {
-        overflow:visible;
         background-image:none;
     }
 
