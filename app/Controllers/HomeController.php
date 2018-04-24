@@ -61,7 +61,7 @@ class HomeController extends Controller
         if ($resume) {
             $mg->messages()->send('careersatlfx.com', [
               'from'    => $email,
-              'to'      => 'trevor@darkroast.co',
+              'to'      => 'trevor@darkroast.co, melanie@landscapefx.com',
               'subject' => $name . ' has filled out an application at careersatlfx.com',
               'html'    => $body,
               'attachment' => [
