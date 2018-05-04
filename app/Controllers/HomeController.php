@@ -8,7 +8,6 @@ class HomeController extends Controller
 {
     public function index($request, $response, $args)
     {
-
         return $this->view->render($response, 'home.twig');
     }
 
@@ -71,7 +70,7 @@ class HomeController extends Controller
         } else {
             $mg->messages()->send('careersatlfx.com', [
               'from'    => $email,
-              'to'      => 'trevor@darkroast.co',
+              'to'      => 'trevor@darkroast.co, melanie@landscapefx.com',
               'subject' => $name . ' has filled out an application at careersatlfx.com',
               'html'    => $body
             ]);
